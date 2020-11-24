@@ -184,6 +184,7 @@
 <hole x="2.5" y="54" drill="3.3"/>
 <hole x="25.5" y="54" drill="3.3"/>
 <text x="23" y="8" size="1.5" layer="22" rot="MR90">Autonomous Combat Controller</text>
+<text x="20" y="7.9" size="1.778" layer="22" rot="MR90">Timothy Bell</text>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">
@@ -980,12 +981,12 @@ design rules under a new name.</description>
 <attribute name="NAME" x="19.2245" y="52.1975" size="0.8128" layer="25" ratio="18"/>
 <attribute name="VALUE" x="19.8595" y="50.991" size="0.8128" layer="27" ratio="10"/>
 </element>
-<element name="R21" library="microbuilder" package="0805-NO" value="10K" x="25.003" y="46.292" smashed="yes" rot="R180">
-<attribute name="NAME" x="26.5905" y="45.3395" size="0.8128" layer="25" ratio="18" rot="R180"/>
+<element name="R21" library="microbuilder" package="0805-NO" value="4.7K" x="25.003" y="46.292" smashed="yes" rot="R180">
+<attribute name="NAME" x="26.5905" y="48.3395" size="0.8128" layer="25" ratio="18" rot="R180"/>
 <attribute name="VALUE" x="23.6695" y="46.165" size="0.8128" layer="27" ratio="10"/>
 </element>
-<element name="R22" library="microbuilder" package="0805-NO" value="10K" x="24.749" y="43.244" smashed="yes">
-<attribute name="NAME" x="23.1615" y="44.1965" size="0.8128" layer="25" ratio="18"/>
+<element name="R22" library="microbuilder" package="0805-NO" value="4.7K" x="24.749" y="43.244" smashed="yes">
+<attribute name="NAME" x="25.1615" y="44.1965" size="0.8128" layer="25" ratio="18"/>
 <attribute name="VALUE" x="23.6695" y="42.99" size="0.8128" layer="27" ratio="10"/>
 </element>
 <element name="Y3" library="microbuilder" package="CRYSTAL_8X3.8" value="32.768kHz" x="9.636" y="47.181" smashed="yes" rot="R180">
@@ -997,7 +998,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="12.3665" y="43.879" size="0.8128" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C14" library="microbuilder" package="0805-NO" value="22pF" x="10.652" y="50.991" smashed="yes">
-<attribute name="NAME" x="9.0645" y="51.9435" size="0.8128" layer="25" ratio="18"/>
+<attribute name="NAME" x="8.0645" y="52.9435" size="0.8128" layer="25" ratio="18"/>
 <attribute name="VALUE" x="9.4455" y="51.88" size="0.8128" layer="27" ratio="10"/>
 </element>
 <element name="C15" library="microbuilder" package="0805-NO" value="0.1uF" x="21.066" y="44.133" smashed="yes" rot="R180">
@@ -1005,11 +1006,11 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="23.1615" y="44.641" size="0.8128" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C16" library="microbuilder" package="0805_10MGAP" value="0.1uF" x="15.986" y="40.577" smashed="yes" rot="R90">
-<attribute name="NAME" x="15.0335" y="38.9895" size="0.8128" layer="25" ratio="18" rot="R90"/>
+<attribute name="NAME" x="13.0335" y="38.9895" size="0.8128" layer="25" ratio="18" rot="R90"/>
 <attribute name="VALUE" x="16.748" y="39.2435" size="0.8128" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C18" library="microbuilder" package="0805_10MGAP" value="10uF" x="14.081" y="40.704" smashed="yes" rot="R270">
-<attribute name="NAME" x="15.0335" y="42.2915" size="0.8128" layer="25" ratio="18" rot="R270"/>
+<attribute name="NAME" x="17.0335" y="41.2915" size="0.8128" layer="25" ratio="18" rot="R270"/>
 <attribute name="VALUE" x="13.446" y="42.0375" size="0.8128" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="R25" library="microbuilder" package="0805-NO" value="10K" x="20.939" y="48.578" smashed="yes">
@@ -1281,7 +1282,8 @@ design rules under a new name.</description>
 <vertex x="22" y="13"/>
 <vertex x="9" y="13"/>
 </polygon>
-<wire x1="17.625" y1="47.8425" x2="16.625" y2="47.8425" width="0" layer="19" extent="1-1"/>
+<contactref element="D3" pad="C"/>
+<wire x1="16.625" y1="47.8425" x2="17.625" y2="47.8425" width="0" layer="19" extent="1-1"/>
 <wire x1="18.4375" y1="45.28" x2="18.4375" y2="47.78" width="0" layer="19" extent="1-1"/>
 <wire x1="10.21" y1="43.498" x2="7.493" y2="40.894" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -1668,9 +1670,6 @@ design rules under a new name.</description>
 <wire x1="17.2212" y1="42.3672" x2="17.125" y2="42.416" width="0.1524" layer="1"/>
 <via x="24.0792" y="41.7576" extent="1-16" drill="0.3"/>
 <via x="20.4978" y="41.7576" extent="1-16" drill="0.3"/>
-</signal>
-<signal name="N$1">
-<contactref element="D3" pad="C"/>
 </signal>
 <signal name="PWM4">
 <contactref element="4" pad="1"/>
