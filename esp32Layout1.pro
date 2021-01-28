@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/Users/timbe/Documents/EAGLE/projects/ACC-Controller/esp32Layout1.brd
+Job           : C:/Users/Sorrenthos/Documents/EAGLE/projects/ACC Controller/esp32Layout1.brd
 
-Start at      : 23:41:20 (11/23/2020)
-End at        : 23:42:05 (11/23/2020)
-Elapsed time  : 00:00:39
+Start at      : 16:02:39 (1/28/2021)
+End at        : 16:02:47 (1/28/2021)
+Elapsed time  : 00:00:06
 
-Signals       :    38   RoutingGrid: 4.92126 mil  Layers: 2
-Connections   :    86   predefined:  9 ( 0 Vias )
+Signals       :    38   RoutingGrid: 3 mil  Layers: 2
+Connections   :    86   predefined:  72 ( 28 Vias )
 
-Router memory :   865728
+Router memory :   2293632
 
-Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8
 
-Time per pass     :  00:00:00  00:00:28  00:00:03  00:00:02  00:00:03  00:00:03
-Number of Ripups  :         0       101         0         0         0         0
-max. Level        :         0         7         0         0         0         0
-max. Total        :         0        38         0         0         0         0
+Time per pass     :  00:00:03  00:00:01  00:00:00  00:00:00  00:00:01  00:00:00  00:00:00  00:00:01  00:00:00  00:00:00
+Number of Ripups  :         0         0         0         0         0         0         0         0         0         0
+max. Level        :         0         1         0         0         0         0         0         0         0         0
+max. Total        :         0         0         0         0         0         0         0         0         0         0
 
-Routed            :         0        76        76        76        77        77
-Vias              :         0        96        43        38        40        35
-Resolution        :    10.5 %    98.8 %    98.8 %    98.8 %   100.0 %   100.0 %
+Routed            :         7        12        12        12        12        12        12        12        12        12
+Vias              :         0         3         6         6         6         6         6         6         6         6
+Resolution        :    91.9 %    97.7 %    97.7 %    97.7 %    97.7 %    97.7 %    97.7 %    97.7 %    97.7 %    97.7 %
 
-Final             : 100.0% finished
+Final             : 97.7% finished. Polygons may have fallen apart.

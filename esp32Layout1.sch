@@ -315,7 +315,7 @@
 </symbols>
 <devicesets>
 <deviceset name="ESP-WROOM-32" prefix="U">
-<description>Module: combo; GPIO, I2C x2, I2S x2, SDIO, SPI x3, UART x3; 19.5dBm</description>
+<description>Module: combo; GPIO, I2C x2, I2S x2, SDIO, SPI x3, UART x3; 19.5dBm &lt;a href="https://pricing.snapeda.com/parts/ESP-WROOM-32/Olimex%20LTD/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="ESP-WROOM-32" x="0" y="0"/>
 </gates>
@@ -360,7 +360,7 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="AVAILABILITY" value="Unavailable"/>
+<attribute name="AVAILABILITY" value="Bad"/>
 <attribute name="DESCRIPTION" value=" WiFi 802.11b/g/n/d/e/i Transceiver Module 2.4GHz Surface Mount "/>
 <attribute name="MF" value="Olimex LTD"/>
 <attribute name="MP" value="ESP-WROOM-32"/>
@@ -2455,58 +2455,58 @@ Epson Toyocom FCC-255</description>
 </library>
 <library name="Tim Parts" urn="urn:adsk.eagle:library:11769766">
 <packages>
-<package name="BNO055" urn="urn:adsk.eagle:footprint:24944884/1" locally_modified="yes" library_version="5" library_locally_modified="yes">
+<package name="BNO055" urn="urn:adsk.eagle:footprint:24944884/2" locally_modified="yes" library_version="6" library_locally_modified="yes">
 <wire x1="-2.6" y1="1.9" x2="2.6" y2="1.9" width="0.127" layer="21"/>
 <wire x1="2.6" y1="1.9" x2="2.6" y2="-1.9" width="0.127" layer="21"/>
 <wire x1="2.6" y1="-1.9" x2="-2.6" y2="-1.9" width="0.127" layer="21"/>
 <wire x1="-2.6" y1="-1.9" x2="-2.6" y2="1.9" width="0.127" layer="21"/>
-<smd name="P11" x="-0.25" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P10" x="0.25" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P9" x="0.75" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P8" x="1.25" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P7" x="1.75" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P12" x="-0.75" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P13" x="-1.25" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P14" x="-1.75" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P15" x="-2.25" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P25" x="0.25" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P24" x="-0.25" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P26" x="0.75" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P27" x="1.25" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P28" x="1.75" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P23" x="-0.75" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P22" x="-1.25" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P21" x="-1.75" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P20" x="-2.25" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P1" x="2.25" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P6" x="2.25" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
-<smd name="P18" x="-2.575" y="0.25" dx="0.9" dy="0.25" layer="1" rot="R180"/>
-<smd name="P17" x="-2.575" y="-0.25" dx="0.9" dy="0.25" layer="1" rot="R180"/>
-<smd name="P16" x="-2.575" y="-0.75" dx="0.9" dy="0.25" layer="1" rot="R180"/>
-<smd name="P19" x="-2.575" y="0.75" dx="0.9" dy="0.25" layer="1" rot="R180"/>
-<smd name="P2" x="2.575" y="0.75" dx="0.9" dy="0.25" layer="1" rot="R180"/>
-<smd name="P3" x="2.575" y="0.25" dx="0.9" dy="0.25" layer="1" rot="R180"/>
-<smd name="P4" x="2.575" y="-0.25" dx="0.9" dy="0.25" layer="1" rot="R180"/>
-<smd name="P5" x="2.575" y="-0.75" dx="0.9" dy="0.25" layer="1" rot="R180"/>
-<text x="-2.3" y="2.6" size="0.3048" layer="21">&gt;NAME</text>
+<smd name="P11" x="0.25" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P10" x="-0.25" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P9" x="-0.75" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P8" x="-1.25" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P7" x="-1.75" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P12" x="0.75" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P13" x="1.25" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P14" x="1.75" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P15" x="2.25" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P25" x="-0.25" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P24" x="0.25" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P26" x="-0.75" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P27" x="-1.25" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P28" x="-1.75" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P23" x="0.75" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P22" x="1.25" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P21" x="1.75" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P20" x="2.25" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P1" x="-2.25" y="1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P6" x="-2.25" y="-1.825" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P18" x="2.575" y="0.25" dx="0.9" dy="0.25" layer="1" rot="R180"/>
+<smd name="P17" x="2.575" y="-0.25" dx="0.9" dy="0.25" layer="1" rot="R180"/>
+<smd name="P16" x="2.575" y="-0.75" dx="0.9" dy="0.25" layer="1" rot="R180"/>
+<smd name="P19" x="2.575" y="0.75" dx="0.9" dy="0.25" layer="1" rot="R180"/>
+<smd name="P2" x="-2.575" y="0.75" dx="0.9" dy="0.25" layer="1" rot="R180"/>
+<smd name="P3" x="-2.575" y="0.25" dx="0.9" dy="0.25" layer="1" rot="R180"/>
+<smd name="P4" x="-2.575" y="-0.25" dx="0.9" dy="0.25" layer="1" rot="R180"/>
+<smd name="P5" x="-2.575" y="-0.75" dx="0.9" dy="0.25" layer="1" rot="R180"/>
+<text x="-0.8" y="2.6" size="0.3048" layer="21">&gt;NAME</text>
 <polygon width="0.127" layer="41">
 <vertex x="-2" y="1.1"/>
 <vertex x="-2" y="-1.15"/>
 <vertex x="2" y="-1.15"/>
 <vertex x="2" y="1.1"/>
 </polygon>
-<circle x="2.54" y="2.84" radius="0.15" width="0.3048" layer="21"/>
+<circle x="-2.26" y="2.84" radius="0.15" width="0.3048" layer="21"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="BNO055" urn="urn:adsk.eagle:package:24944893/1" type="box" library_version="5" library_locally_modified="yes">
+<package3d name="BNO055" urn="urn:adsk.eagle:package:24944893/2" type="box" library_version="6" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="BNO055"/>
 </packageinstances>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="BNO055" library_version="5" library_locally_modified="yes">
+<symbol name="BNO055" urn="urn:adsk.eagle:symbol:26458039/1" library_version="6" library_locally_modified="yes">
 <pin name="PIN1" x="-10.16" y="15.24" length="short" rot="R270"/>
 <pin name="VDDIO" x="-7.62" y="15.24" length="short" rot="R270"/>
 <pin name="XIN32" x="-5.08" y="15.24" length="short" rot="R270"/>
@@ -2543,7 +2543,7 @@ Epson Toyocom FCC-255</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BNO055" library_version="5" library_locally_modified="yes">
+<deviceset name="BNO055" urn="urn:adsk.eagle:component:26458046/1" library_version="6" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="BNO055" x="0" y="0"/>
 </gates>
@@ -2580,7 +2580,7 @@ Epson Toyocom FCC-255</description>
 <connect gate="G$1" pin="XOUT32" pad="P26"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24944893/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24944893/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2646,7 +2646,7 @@ Epson Toyocom FCC-255</description>
 <part name="IO27" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
 <part name="IO32" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
 <part name="IO33" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
-<part name="BNO055" library="Tim Parts" library_urn="urn:adsk.eagle:library:11769766" deviceset="BNO055" device="" package3d_urn="urn:adsk.eagle:package:24944893/1"/>
+<part name="BNO055" library="Tim Parts" library_urn="urn:adsk.eagle:library:11769766" deviceset="BNO055" device="" package3d_urn="urn:adsk.eagle:package:24944893/2"/>
 <part name="R3" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="10K"/>
 <part name="U$12" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$13" library="microbuilder" deviceset="GND" device=""/>
