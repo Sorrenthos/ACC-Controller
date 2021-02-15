@@ -2667,7 +2667,6 @@ Epson Toyocom FCC-255</description>
 <part name="U$23" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$24" library="microbuilder" deviceset="GND" device=""/>
 <part name="R4" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="10K"/>
-<part name="U$25" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$26" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="R7" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="10K"/>
 <part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="0.1uF"/>
@@ -2682,8 +2681,11 @@ Epson Toyocom FCC-255</description>
 <part name="U$8" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$10" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$28" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="NR" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
+<part name="SDA" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
+<part name="SCL" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
+<part name="U$25" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$29" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="U$30" library="microbuilder" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2909,9 +2911,6 @@ Epson Toyocom FCC-255</description>
 <attribute name="NAME" x="86.36" y="-99.06" size="1.27" layer="95" font="vector" align="center"/>
 <attribute name="VALUE" x="86.36" y="-104.14" size="1.016" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
-<instance part="U$25" gate="G$1" x="81.28" y="-109.22" smashed="yes">
-<attribute name="VALUE" x="79.756" y="-111.76" size="1.27" layer="96"/>
-</instance>
 <instance part="U$26" gate="G$1" x="96.52" y="-101.6" smashed="yes" rot="R270">
 <attribute name="VALUE" x="97.536" y="-100.076" size="1.27" layer="96" rot="R270"/>
 </instance>
@@ -2960,10 +2959,22 @@ Epson Toyocom FCC-255</description>
 <instance part="U$28" gate="G$1" x="40.64" y="96.52" smashed="yes">
 <attribute name="VALUE" x="39.116" y="97.536" size="1.27" layer="96"/>
 </instance>
-<instance part="U$29" gate="G$1" x="137.16" y="76.2" smashed="yes" rot="R90">
+<instance part="NR" gate="1" x="121.92" y="-81.28" smashed="yes" rot="R270">
+<attribute name="NAME" x="123.7742" y="-80.137" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="118.618" y="-80.137" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SDA" gate="1" x="132.08" y="-81.28" smashed="yes" rot="R270">
+<attribute name="NAME" x="133.9342" y="-80.137" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="128.778" y="-80.137" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SCL" gate="1" x="142.24" y="-81.28" smashed="yes" rot="R270">
+<attribute name="NAME" x="144.0942" y="-80.137" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="138.938" y="-80.137" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="U$25" gate="G$1" x="137.16" y="76.2" smashed="yes" rot="R90">
 <attribute name="VALUE" x="136.144" y="74.676" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="U$30" gate="G$1" x="132.08" y="40.64" smashed="yes" rot="R90">
+<instance part="U$29" gate="G$1" x="132.08" y="40.64" smashed="yes" rot="R90">
 <attribute name="VALUE" x="131.064" y="39.116" size="1.27" layer="96" rot="R90"/>
 </instance>
 </instances>
@@ -3123,15 +3134,6 @@ Epson Toyocom FCC-255</description>
 <wire x1="111.76" y1="-55.88" x2="93.98" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="-101.6" x2="78.74" y2="-101.6" width="0.1524" layer="91"/>
-<pinref part="BNO055" gate="G$1" pin="NRESET"/>
-<wire x1="78.74" y1="-101.6" x2="78.74" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="U$25" gate="G$1" pin="GND"/>
-<wire x1="81.28" y1="-101.6" x2="81.28" y2="-106.68" width="0.1524" layer="91"/>
-<junction x="81.28" y="-101.6"/>
-</segment>
-<segment>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="88.9" x2="142.24" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
@@ -3195,18 +3197,6 @@ Epson Toyocom FCC-255</description>
 <label x="45.72" y="43.18" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IO16" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="IO16"/>
-<wire x1="91.44" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
-<label x="96.52" y="71.12" size="1.016" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="35.56" x2="119.38" y2="35.56" width="0.1524" layer="91"/>
-<label x="119.38" y="35.56" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="IO5" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="IO5"/>
@@ -3264,11 +3254,6 @@ Epson Toyocom FCC-255</description>
 </net>
 <net name="SDA_3V" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="SDO/SD0"/>
-<wire x1="50.8" y1="60.96" x2="45.72" y2="60.96" width="0.1524" layer="91"/>
-<label x="45.72" y="60.96" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="BNO055" gate="G$1" pin="COM0"/>
 <wire x1="88.9" y1="-40.64" x2="88.9" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
@@ -3277,13 +3262,18 @@ Epson Toyocom FCC-255</description>
 <junction x="96.52" y="-33.02"/>
 <label x="106.68" y="-33.02" size="1.016" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="SDA" gate="1" pin="P"/>
+<wire x1="132.08" y1="-83.82" x2="132.08" y2="-88.9" width="0.1524" layer="91"/>
+<label x="132.08" y="-88.9" size="1.016" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="IO21"/>
+<wire x1="91.44" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
+<label x="96.52" y="60.96" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SCL_3V" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="SCK/CLK"/>
-<wire x1="50.8" y1="63.5" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
-<label x="45.72" y="63.5" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="BNO055" gate="G$1" pin="COM1"/>
 <wire x1="93.98" y1="-53.34" x2="101.6" y2="-53.34" width="0.1524" layer="91"/>
@@ -3291,6 +3281,16 @@ Epson Toyocom FCC-255</description>
 <wire x1="101.6" y1="-53.34" x2="106.68" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="101.6" y="-53.34"/>
 <label x="106.68" y="-53.34" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SCL" gate="1" pin="P"/>
+<wire x1="142.24" y1="-83.82" x2="142.24" y2="-88.9" width="0.1524" layer="91"/>
+<label x="142.24" y="-88.9" size="1.016" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="IO22"/>
+<wire x1="91.44" y1="58.42" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
+<label x="96.52" y="58.42" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="5.0V" class="0">
@@ -3366,17 +3366,23 @@ Epson Toyocom FCC-255</description>
 <wire x1="40.64" y1="91.44" x2="40.64" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="U$28" gate="G$1" pin="3.3V"/>
 </segment>
-</net>
-<net name="PWM4" class="0">
 <segment>
-<pinref part="4" gate="A" pin="1"/>
-<wire x1="246.38" y1="30.48" x2="236.22" y2="30.48" width="0.1524" layer="91"/>
-<label x="236.22" y="30.48" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="WEAPON" gate="A" pin="1"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="76.2" x2="147.32" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="81.28" x2="142.24" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="76.2" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
+<junction x="142.24" y="76.2"/>
+<pinref part="U$25" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="SWP/SD3"/>
-<wire x1="50.8" y1="53.34" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
-<label x="45.72" y="53.34" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="DRIVE" gate="A" pin="1"/>
+<wire x1="147.32" y1="40.64" x2="142.24" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="40.64" x2="142.24" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U$29" gate="G$1" pin="3.3V"/>
+<wire x1="134.62" y1="40.64" x2="142.24" y2="40.64" width="0.1524" layer="91"/>
+<junction x="142.24" y="40.64"/>
 </segment>
 </net>
 <net name="PWM3" class="0">
@@ -3413,18 +3419,6 @@ Epson Toyocom FCC-255</description>
 <pinref part="U1" gate="G$1" pin="IO13"/>
 <wire x1="91.44" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
 <label x="96.52" y="78.74" size="1.016" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="IO21" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="IO21"/>
-<wire x1="91.44" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
-<label x="96.52" y="60.96" size="1.016" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="71.12" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
-<label x="116.84" y="71.12" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="IO26" class="0">
@@ -3562,26 +3556,56 @@ Epson Toyocom FCC-255</description>
 <pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="NRESET" class="1">
 <segment>
-<pinref part="DRIVE" gate="A" pin="1"/>
-<wire x1="147.32" y1="40.64" x2="142.24" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="40.64" x2="142.24" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
-<junction x="142.24" y="40.64"/>
-<pinref part="U$30" gate="G$1" pin="3.3V"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="-101.6" x2="78.74" y2="-101.6" width="0.1524" layer="91"/>
+<pinref part="BNO055" gate="G$1" pin="NRESET"/>
+<wire x1="78.74" y1="-101.6" x2="78.74" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-101.6" x2="78.74" y2="-104.14" width="0.1524" layer="91"/>
+<junction x="78.74" y="-101.6"/>
+<label x="78.74" y="-104.14" size="1.016" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="NR" gate="1" pin="P"/>
+<wire x1="121.92" y1="-83.82" x2="121.92" y2="-88.9" width="0.1524" layer="91"/>
+<label x="121.92" y="-88.9" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="N$12" class="1">
+<net name="IO34" class="0">
 <segment>
-<pinref part="WEAPON" gate="A" pin="1"/>
-<wire x1="139.7" y1="76.2" x2="142.24" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="76.2" x2="147.32" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="81.28" x2="142.24" y2="76.2" width="0.1524" layer="91"/>
-<junction x="142.24" y="76.2"/>
-<pinref part="U$29" gate="G$1" pin="3.3V"/>
+<pinref part="U1" gate="G$1" pin="IO34"/>
+<wire x1="91.44" y1="40.64" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
+<label x="96.52" y="40.64" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="119.38" y1="71.12" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
+<label x="116.84" y="71.12" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="IO35" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="IO35"/>
+<wire x1="91.44" y1="38.1" x2="96.52" y2="38.1" width="0.1524" layer="91"/>
+<label x="96.52" y="38.1" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="121.92" y1="35.56" x2="119.38" y2="35.56" width="0.1524" layer="91"/>
+<label x="119.38" y="35.56" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PWM4" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="IO19"/>
+<wire x1="91.44" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
+<label x="96.52" y="63.5" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="4" gate="A" pin="1"/>
+<wire x1="246.38" y1="30.48" x2="236.22" y2="30.48" width="0.1524" layer="91"/>
+<label x="236.22" y="30.48" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
